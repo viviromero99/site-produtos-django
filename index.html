@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+   <nav class="navbar bg-white border-bottom navbar-expand-md fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="#"><img src="assets/images/other/beauty_logo.png" style="width: 140px;" 
+            alt="The Beauty Insider"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" 
+            aria-expanded="false" aria-label="Botão de menu">
+            <span class="navbar-toggler-icon">
+               <i class="fas fa-bars" style="color: #000; font-size:28px;"></i>
+            </span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mr-auto">
+               <a class="nav-item nav-link text-secondary" href="pages/shopAll.html">Shop All</a>
+               <a class="nav-item nav-link text-secondary" href="pages/skincare.html">Skincare</a>
+               <div class="dropdown">
+                  <a class="nav-item nav-link text-secondary dropdown-toggle" data-toggle="dropdown" href="pages/makeup.html#">
+                     Makeup
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="pages/makeup.html#face">Face</a>
+                     <a class="dropdown-item" href="pages/makeup.html#eyes">Eyes</a>
+                     <a class="dropdown-item" href="pages/makeup.html#cheeks">Cheeks</a>
+                     <a class="dropdown-item" href="pages/makeup.html#lips">Lips</a>
+                     <a class="dropdown-item" href="pages/makeup.html#palettes">Palettes</a>
+                  </div>
+               </div>
+               <a class="nav-item nav-link text-secondary" href="pages/bath&body.html">Bath&Body</a>
+               <a class="nav-item nav-link text-secondary" href="pages/fragrances.html">Fragances</a>
+               <a class="nav-item nav-link text-secondary" href="pages/aboutUs.html">About Us</a>
+            </div>
+            <div class="navbar-nav">
+               <a class="nav-link nav-item" href="#Account">
+                  <i class="fas fa-user fa-lg" style="color: #000;"></i>
+               </a>
+               <a class="nav-link nav-item" href="#Cart">
+                  <i class="fas fa-shopping-bag fa-lg" style="color: #000;"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </nav>
+   
+   <!--
+      <div class="bgimage mb-5" style="margin-top: 69px;"></div>
+   -->
+   <div id="carousel-id" class="carousel slide mb-5"
+        style="margin-top: 69px;" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+         <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-id" data-slide-to="1"></li>
+         <li data-target="#carousel-id" data-slide-to="2"></li>
+      </ol>  
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <div class="carouselImage1"></div>
+         </div>
+
+         <div class="carousel-item">
+            <div class="carouselImage2"></div>
+         </div>
+
+         <div class="carousel-item">
+            <div class="carouselImage3"></div>
+         </div>
+      </div>   
+      
+      <a href="#carousel-id" class="carousel-control-prev" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true">
+            <span class="sr-only">Anterior</span>
+         </span>
+      </a>
+      <a href="#carousel-id" class="carousel-control-next" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true">
+            <span class="sr-only">Próximo</span>
+         </span>
+      </a>
+   </div> 
+
+   <h5 class="mb-3 ml-5" id="featured">Shop Our Featured Products</h5>
+
+   <div class="scrolling-wrapper row flex-row flex-nowrap mb-5">
+      <div class="col-auto mb-3 ml-4">
+         <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/other/featured1.png" alt="the skin match set">
+            <div class="card-body text-secondary">
+               <h5 class="card-title">Fenty Skin Set</h5>
+               <p class="card-text">cleanser + toner + moisturizing sunscreen</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+               <ul class="list-inline ">
+                  <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                  <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="col-auto mb-3">
+         <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/other/featured3.jpg" alt="the match skin set">
+            <div class="card-body text-secondary">
+               <h5 class="card-title">Earth Harbor Beach Hair Set</h5>
+               <p class="card-text">hair texturizer + hair elixir</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+               <ul class="list-inline ">
+                  <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                  <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="col-auto mb-3">
+         <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/other/featured2.jpg" alt="the match skin set">
+            <div class="card-body text-secondary">
+               <h5 class="card-title">Circumference Skin Set</h5>
+               <p class="card-text">toner + serum + face oil + 2 face masks</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+               <ul class="list-inline ">
+                  <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                  <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="col-auto mb-3">
+         <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/other/featured5.jpg" alt="the match skin set">
+            <div class="card-body text-secondary">
+               <h5 class="card-title">Fenty Beauty Body Lava Set</h5>
+               <p class="card-text"> 2 body oil highlighters + brush</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+               <ul class="list-inline ">
+                  <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                  <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="col-auto mb-3">
+         <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/fragrance/fragrance13.jpg" alt="the match skin set">
+            <div class="card-body text-secondary">
+               <h5 class="card-title">TOM FORD Soleil Blanc</h5>
+               <p class="card-text">Eau de Parfum - 50ml</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+               <ul class="list-inline ">
+                  <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                  <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="col-auto mb-3 mr-3">
+         <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+            <img class="card-img-top" src="assets/images/other/featured4.png" alt="the match skin set">
+            <div class="card-body text-secondary">
+               <h5 class="card-title">Fourth Ray Beauty Set</h5>
+               <p class="card-text">vitamin C serum + mist</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+               <ul class="list-inline ">
+                  <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                  <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="jumbotron" style=”background-color:#faf2f4”>
+      <h1 class="display-4 mb-3"> Beauty inspired by real life.</h1>
+      <h5>
+      <small class="text-secondary">The Beauty Insider is a new approach to beauty. It’s about fun and freedom and being OK with yourself today.</small>
+      <br>
+      <small class="text-secondary">We make intuitive, uncomplicated products designed to live with you.</small>
+      </h5>
+   </div>
+
+   <div class="mx-auto mb-5">
+      <h2 class="text-center mb-3">Skin first.</h2>
+      <p class="text-center mb-4 font-weight-normal text-break">Our skincare essentials are designed to make you look and feel your glowy, dewy best before you even think about makeup.</p>
+      <div class="row justify-content-center">
+         <a href="pages/skincare.html" class="btn btn-dark btn mx-auto">Shop All Skincare</a>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row border-bottom mb-4">
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/skincare/skincare1.jpg" alt="biossance face oil">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">Biossance face oil</h5>
+                  <p class="card-text">squalane + vitamin c rose oil</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/skincare/skincare8.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/skincare/skincare14.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/skincare/skincare6.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/skincare/skincare13.jpg" alt="the skin match set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/skincare/skincare12.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="mx-auto mb-5">
+      <h2 class="text-center mb-3">Makeup second.</h2>
+      <p class="text-center mb-4 font-weight-normal text-break">Products that give you options but never cover you up, turn you into someone else, or over-complicate your routine. Because beauty should make you feel good.</p>
+      <div class="row justify-content-center">
+         <a href="pages/makeup.html" class="btn btn-dark btn mx-auto">Shop All Makeup</a>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row mb-4">
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/makeup/face1.png" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/makeup/face2.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/makeup/lips1.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/makeup/palettes2.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/makeup/eyes1.jpg" alt="the skin match set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-4">
+            <div class="card border-white mb-3">
+               <img class="card-img-top" src="assets/images/makeup/palettes1.jpg" alt="the match skin set">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">The Skin Match Set</h5>
+                  <p class="card-text">cleanser + serum + moisturizer + face mask</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-5"><p class="card-text">$50</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="footer bg-dark">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-4 col-lg-3 col-sm-7">
+               <h6 class="text-white-50 font-weight-light">Social media</h6>
+               <ul class="list-inline">
+                  <li class="list-inline-item"><a href='#instagram'><i class="fab fa-instagram text-white"></i>
+                  </a></li>
+                  <li class="list-inline-item"><a href='#twitter'><i class="fab fa-twitter text-white"></i>
+                  </a></li>
+                  <li class="list-inline-item"><a href='#pinterest'><i class="fab fa-pinterest text-white"></i>
+                  </a></li>
+                  <li class="list-inline-item"><a href='#facebook'><i class="fab fa-facebook text-white"></i>
+                  </a></li>
+                  <li class="list-inline-item"><a href='#youtube'><i class="fab fa-youtube text-white"></i>
+                  </a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-sm-5">
+               <h6 class="text-white-50 font-weight-light">Help</h6>
+               <ul class="list-unstyled">
+                  <li><a class="text-white h6 font-weight-light" href='#'>Returns & exchanges</a></li>
+                  <li><a class="text-white h6 font-weight-light" href='#'>Shipping</a></li>
+                  <li><a class="text-white h6 font-weight-light" href='#'>Help & FAQ</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-sm-7">
+               <h6 class="text-white-50 font-weight-light">More</h6>
+               <ul class="list-unstyled">
+                  <li><a class="text-white h6 font-weight-light" href='#'>Free stuff</a></li>
+                  <li><a class="text-white h6 font-weight-light" href='#'>Gift cards</a></li>
+               </ul>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-sm-5">
+               <h6 class="text-white-50 font-weight-light">Contact</h6>
+               <ul class="list-unstyled">
+                  <li><i class="fas fa-user"></i> The Beauty Insider</li>
+                  <li><i class="fas fa-phone"></i> (99)99999-9999</li>
+                  <li><i class="fas fa-envelope-square"></i> <a class="text-white h6 font-weight-light" href='mailto:brand@TBI.com'>brand@TBI.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
