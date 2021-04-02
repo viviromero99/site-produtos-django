@@ -1,0 +1,247 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block corpo %}
+   <div class="container" style="margin-top: 120px;">
+      <h3 class="font-weight-bold mb-5">Shop All Products</h3>
+   </div>
+
+   <div class="container">
+      <h6 id="featured" class="font-weight-bold mb-4">Featured</h6>
+   </div>
+    
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in featured %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 id="skincare" class="font-weight-bold mb-4">Skincare</h6>
+   </div>
+    
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in skincare %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h5 class="font-weight-bold mb-4">Makeup</h5>
+   </div>
+
+   <div class="container">
+      <h6 id="face" class="font-weight-bold mb-4">Face</h6>
+   </div>
+
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in face %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 id="eyes" class="font-weight-bold mb-4">Eyes</h6>
+   </div>
+
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in eyes %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 id="cheeks" class="font-weight-bold mb-4">Cheeks</h6>
+   </div>
+
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in cheeks %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 id="lips" class="font-weight-bold mb-4">Lips</h6>
+   </div>
+
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in lips %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 id="palettes" class="font-weight-bold mb-4">Palettes</h6>
+   </div>
+
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in palettes %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 class="font-weight-bold mb-4">Bath & Body</h6>
+   </div>
+
+   <div class="container mb-5">
+      <div class="row mb-4 border-bottom">
+         {% for produto in bathbody %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+   <div class="container">
+      <h6 class="font-weight-bold mb-4">Fragrances</h6>
+   </div>
+
+   <div class="container">
+      <div class="row mb-4">
+         {% for produto in fragrances %}
+            <div class="col-sm-6 col-lg-3">
+               <div class="card border-white mb-3 h-100">
+                  <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+                  <div class="card-body text-secondary">
+                     <h5 class="card-title">{{ produto.nome }}</h5>
+                     <p class="card-text">{{ produto.descricao }}</p>
+                  </div>
+                  <div class="card-footer bg-white border-0">
+                     <ul class="list-inline ">
+                           <li class="list-inline-item mr-4"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                           <li class="list-inline-item"><p class="card-text">$ {{ produto.preco }}</p></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </div>
+
+{% endblock %}

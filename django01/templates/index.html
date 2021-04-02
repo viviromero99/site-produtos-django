@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block corpo %}
+    <div id="carousel-id" class="carousel slide mb-5" style="margin-top: 69px;" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+         <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-id" data-slide-to="1"></li>
+         <li data-target="#carousel-id" data-slide-to="2"></li>
+      </ol>  
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <div class="carouselImage1"></div>
+         </div>
+
+         <div class="carousel-item">
+            <div class="carouselImage2"></div>
+         </div>
+
+         <div class="carousel-item">
+            <div class="carouselImage3"></div>
+         </div>
+      </div>   
+      
+      <a href="#carousel-id" class="carousel-control-prev" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true">
+            <span class="sr-only">Anterior</span>
+         </span>
+      </a>
+      <a href="#carousel-id" class="carousel-control-next" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true">
+            <span class="sr-only">Próximo</span>
+         </span>
+      </a>
+   </div> 
+
+   <h5 class="mb-3 ml-5" id="featured">Shop Our Featured Products</h5>
+
+   <div class="scrolling-wrapper row flex-row flex-nowrap mb-5">
+      {% for produto in featured %}
+         <div class="col-auto mb-3 ml-4">
+            <div class="card border-secondary h-100 mb-3" style="width: 18rem;">
+               <img class="card-img-top" src="{% static 'images/products/' %}{{ produto.imagem }}" alt="{{ produto.nome }}">
+               <div class="card-body text-secondary">
+                  <h5 class="card-title">{{ produto.nome }}</h5>
+                  <p class="card-text">{{ produto.descricao }}</p>
+               </div>
+               <div class="card-footer bg-white border-0">
+                  <ul class="list-inline ">
+                     <li class="list-inline-item mr-5"><a href="#" class="btn btn-outline-secondary">Add to Bag</a></li>
+                     <li class="list-inline-item ml-3"><p class="card-text">$ {{ produto.preco }}</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      {% endfor %}
+   </div>
+
+   <div class="jumbotron" style=”background-color:#faf2f4”>
+      <h1 class="display-4 mb-3"> Beauty inspired by real life.</h1>
+      <h5>
+      <small class="text-secondary">The Beauty Insider is a new approach to beauty. It’s about fun and freedom and being OK with yourself today.</small>
+      <br>
+      <small class="text-secondary">We make intuitive, uncomplicated products designed to live with you.</small>
+      </h5>
+   </div>
+
+   <div class="mx-auto mb-5">
+      <h2 class="text-center mb-3">Skin first.</h2>
+      <p class="text-center mb-4 font-weight-normal text-break">Our skincare essentials are designed to make you look and feel your glowy, dewy best before you even think about makeup.</p>
+      <div class="row justify-content-center">
+         <a href="{% url 'produto:skincare' %}" class="btn btn-dark btn mx-auto">Shop All Skincare</a>
+      </div>
+   </div>
+
+   <div class="mx-auto mb-5 border-top">
+      <h2 class="text-center mt-4 mb-3">Makeup second.</h2>
+      <p class="text-center mb-4 font-weight-normal text-break">Products that give you options but never cover you up, turn you into someone else, or over-complicate your routine. Because beauty should make you feel good.</p>
+      <div class="row justify-content-center">
+         <a href="{% url 'produto:makeup' %}" class="btn btn-dark btn mx-auto">Shop All Makeup</a>
+      </div>
+   </div>
+
+{% endblock %}

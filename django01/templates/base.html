@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" />
+    <title>{% block titulo %}Beauty Insider{% endblock %}</title>
+    <style>
+        {% block estilo %}
+
+        {% endblock %}
+    </style>
+</head>
+
+<body class="barra">
+    <nav class="navbar bg-white border-bottom navbar-expand-md fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/other/beauty_logo.png' %}" style="width: 140px;" 
+            alt="The Beauty Insider"></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" 
+            aria-expanded="false" aria-label="Botão de menu">
+            <span class="navbar-toggler-icon">
+               <i class="fas fa-bars" style="color: #000; font-size:28px;"></i>
+            </span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mr-auto">
+               <a class="nav-item nav-link text-secondary" href="{% url 'produto:shopAll' %}">Shop All</a>
+               <a class="nav-item nav-link text-secondary" href="{% url 'produto:skincare' %}">Skincare</a>
+               <div class="dropdown">
+                  <a class="nav-item nav-link text-secondary dropdown-toggle" data-toggle="dropdown" href="{% url 'produto:makeup' %}">
+                     Makeup
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="{% url 'produto:makeup' %}">Face</a>
+                     <a class="dropdown-item" href="{% url 'produto:makeup' %}">Eyes</a>
+                     <a class="dropdown-item" href="{% url 'produto:makeup' %}">Cheeks</a>
+                     <a class="dropdown-item" href="{% url 'produto:makeup' %}">Lips</a>
+                     <a class="dropdown-item" href="{% url 'produto:makeup' %}">Palettes</a>
+                  </div>
+               </div>
+               <a class="nav-item nav-link text-secondary" href="{% url 'produto:bath&body' %}">Bath&Body</a>
+               <a class="nav-item nav-link text-secondary" href="{% url 'produto:fragrances' %}">Fragrances</a>
+               <a class="nav-item nav-link text-secondary" href="{% url 'aboutUs' %}">About Us</a>
+            </div>
+            <div class="navbar-nav">
+               <a class="nav-link nav-item" href="#Account">
+                  <i class="fas fa-user fa-lg" style="color: #000;"></i>
+               </a>
+               <a class="nav-link nav-item" href="#Cart">
+                  <i class="fas fa-shopping-bag fa-lg" style="color: #000;"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+    {% block corpo %}
+        
+    {% endblock %}
+    
+
+    {% block rodape %}
+        <div class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-3 col-sm-7">
+                    <h6 class="text-white-50 font-weight-light">Social media</h6>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href='#instagram'><i class="fab fa-instagram text-white"></i>
+                        </a></li>
+                        <li class="list-inline-item"><a href='#twitter'><i class="fab fa-twitter text-white"></i>
+                        </a></li>
+                        <li class="list-inline-item"><a href='#pinterest'><i class="fab fa-pinterest text-white"></i>
+                        </a></li>
+                        <li class="list-inline-item"><a href='#facebook'><i class="fab fa-facebook text-white"></i>
+                        </a></li>
+                        <li class="list-inline-item"><a href='#youtube'><i class="fab fa-youtube text-white"></i>
+                        </a></li>
+                    </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-sm-5">
+                    <h6 class="text-white-50 font-weight-light">Help</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white h6 font-weight-light" href='#'>Returns & exchanges</a></li>
+                        <li><a class="text-white h6 font-weight-light" href='#'>Shipping</a></li>
+                        <li><a class="text-white h6 font-weight-light" href='#'>Help & FAQ</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-sm-7">
+                    <h6 class="text-white-50 font-weight-light">More</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white h6 font-weight-light" href='#'>Free stuff</a></li>
+                        <li><a class="text-white h6 font-weight-light" href='#'>Gift cards</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-sm-5">
+                    <h6 class="text-white-50 font-weight-light">Contact</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-user"></i> <a class="text-white h6 font-weight-light"> The Beauty Insider </a></li>
+                        <li><i class="fas fa-phone"></i> <a class="text-white h6 font-weight-light"> (99)99999-9999 </a></li>
+                        <li><i class="fas fa-envelope-square"></i> <a class="text-white h6 font-weight-light" href='mailto:brand@TBI.com'>brand@TBI.com</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    <script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mask.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+
+            {% block domready %}
+
+            {% endblock %}
+        });
+    </script>
+</body>
+</html>
